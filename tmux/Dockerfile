@@ -14,7 +14,7 @@ RUN ./configure --disable-shared && make && make install
 
 WORKDIR /
 
-ARG version="3.1c"
+ARG version="3.2a"
 
 RUN curl https://github.com/tmux/tmux/releases/download/${version}/tmux-${version}.tar.gz -L -o tmux-${version}.tar.gz
 RUN tar zxvf tmux-${version}.tar.gz
